@@ -1,0 +1,7 @@
+references
+
+https://speckyboy.com/vertical-slide-menu-css-transitions/
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+/Users/alexgreen/Documents/college/assignments/portfolio/humanish.jpg
