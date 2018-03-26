@@ -1,5 +1,6 @@
 body {
-  background: white;
+  background: black;
+  color: white;
   /* overflow: hidden; */
 }
 
@@ -9,6 +10,8 @@ body {
   right: 0;
   bottom: 0;
 }
+
+/* hover-over slide-out nav bar */
 
 h1 {
   right: 0;
@@ -20,11 +23,8 @@ h2 {
   background-color: yellow; */
   display: flex;
   justify-content: center;
-  color: black;
+  color: white;
 }
-
-
-
 
 
 .icon-box a {  /* makes the sliding motion smoother*/
