@@ -14,8 +14,8 @@ a {
   text-decoration: none;
 }
 
-.container {
-  position: absolute;
+.navbar {
+  position: fixed;
   left: 0;
   bottom: 0;
 }
