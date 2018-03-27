@@ -15,6 +15,7 @@ body {
 
 h1 {
   right: 0;
+  z-index: 50
 }
 
 h2 {
@@ -32,7 +33,27 @@ h2 {
   text-align: center;
 }
 
-.icon-box.home h2 {  /* when content tab comes out*/
+.icon-box h2 {  /* when content tab comes out*/
+  display: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  line-height: 85px;
+  width: 120px;
+  padding-right: 120px;
+  /* -webkit-transition: all .3s;
+  -moz-transition: all .5s;
+  -ms-transition: all .5s;
+  -o-transition: all .5s;
+  transition: all .5s; */
+}
+
+.showmenu {
+  opacity: 100;
+  right: 120px;
+  margin: 0;
+  text-align: center;
   z-index: -999;
   position: absolute;
   top: 0;
@@ -46,11 +67,5 @@ h2 {
   -ms-transition: all .5s;
   -o-transition: all .5s;
   transition: all .5s;
-}
-
-.icon-box.home a:hover h2 {
-  opacity: 1;
-  right: 120px;
-  margin: 0;
-  text-align: center;
+  display: block;
 }

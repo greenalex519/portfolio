@@ -1,56 +1,43 @@
-body {
-  background: black;
-  color: white;
-  /* overflow: hidden; */
+.menu {
+	list-style-type: none;
+
+	li {
+		&:active, &:hover, &:focus {
+			.submenu {
+				transform: translateX(0);
+			}
+		}
+	}
 }
 
-.container {
-  position: absolute;
-  width: 200px;
-  right: 0;
-  bottom: 0;
+.submenu-wrap {
+	display: inline-block;
+
+	overflow-x: hidden;
+
+	vertical-align: bottom;
+
+	margin: 0 0 0 0.5rem;
 }
 
-/* hover-over slide-out nav bar */
+.submenu {
+	display: inline-block;
 
-h1 {
-  right: 0;
-}
+	transform: translateX(-100%);
 
-h2 {
-  margin: 0 ; /* must be set so sliding motion is horizontal*/
-  /* display: block;
-  background-color: yellow; */
-  display: flex;
-  justify-content: center;
-  color: white;
-}
+	transition: transform 1s linear;
 
+	list-style-type: none;
 
-.icon-box a {  /* makes the sliding motion smoother*/
-  padding: 140px;
-  text-align: center;
-}
+	padding: 0;
 
-.icon-box.home h2 {  /* when content tab comes out*/
-  z-index: -999;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  line-height: 85px;
-  width: 120px;
-  padding-right: 120px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-}
+	li {
+		display: inline-block;
 
-.icon-box.home a:hover h2 {
-  opacity: 1;
-  right: 120px;
-  margin: 0;
-  text-align: center;
+		padding: 0 0 0 1rem;
+
+		&:first-child {
+			margin-left: -0.5rem;
+		}
+	}
 }
