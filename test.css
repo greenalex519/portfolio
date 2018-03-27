@@ -85,9 +85,6 @@ input[type=submit]:hover {
 }
 
 
-
-
-
 /*contact image */
 .greeting {
   position: absolute;
@@ -104,4 +101,16 @@ input[type=submit]:hover {
   bottom: 0;
   padding-bottom: 15%;
   padding-left: 77%;
+}
+
+.column-a {
+  display: block
+}
+
+.column-b {
+
+}
+
+.column-c {
+
 }
