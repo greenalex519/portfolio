@@ -1,15 +1,3 @@
-// //hover nav bar
-// $(document).ready(function() {
-//      $("h1").hover(function() {
-//          $(this).siblings("h2").addClass("showmenu"); //for 3 seconds etc
-//      }, function() {                                         //get rid of?
-//          $(this).siblings("h2").removeClass("showmenu");  //get rid off?
-//      });
-//  });
-
-
-
-// animation
 (function() {
 	'use strict';
 

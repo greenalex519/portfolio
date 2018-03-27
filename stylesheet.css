@@ -1,71 +1,49 @@
-body {
+body{
   background: black;
   color: white;
-  /* overflow: hidden; */
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .container {
   position: absolute;
-  width: 200px;
-  right: 0;
+  left: 0;
   bottom: 0;
 }
 
-/* hover-over slide-out nav bar */
-
-h1 {
-  right: 0;
-  z-index: 50
+.menu {
+  list-style-type: none;
+}
+.menu li:active .submenu, .menu li:hover .submenu, .menu li:focus .submenu {
+  transform: translateX(0);
+}
+.submenu-wrap {
+  display: inline-block;
+  overflow-x: hidden;
+  vertical-align: bottom;
+  margin: 0 0 0 0.5rem;
+}
+.submenu {
+  display: inline-block;
+  transform: translateX(-100%);
+  transition: transform 1s linear;
+  list-style-type: none;
+  padding: 0;
+}
+.submenu li {
+  display: inline-block;
+  padding: 0 0 0 1rem;
+}
+.submenu li:first-child {
+  margin-left: -0.5rem;
 }
 
-h2 {
-  margin: 0 ; /* must be set so sliding motion is horizontal*/
-  /* display: block;
-  background-color: yellow; */
-  display: flex;
-  justify-content: center;
-  color: white;
-}
-
-
-.icon-box a {  /* makes the sliding motion smoother*/
-  padding: 140px;
-  text-align: center;
-}
-
-.icon-box h2 {  /* when content tab comes out*/
-  display: hidden;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  line-height: 85px;
-  width: 120px;
-  padding-right: 120px;
-  /* -webkit-transition: all .3s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s; */
-}
-
-.showmenu {
-  opacity: 100;
-  right: 120px;
-  margin: 0;
-  text-align: center;
-  z-index: -999;
-  position: absolute;
-  top: 0;
-  right: 0;
-  opacity: 0;
-  line-height: 85px;
-  width: 120px;
-  padding-right: 120px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .5s;
-  -ms-transition: all .5s;
-  -o-transition: all .5s;
-  transition: all .5s;
-  display: block;
+button {
+  z-index: 1;
+  position: fixed;
+  bottom: 1em;
+  left: 1em;
 }
