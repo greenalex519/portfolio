@@ -1,9 +1,13 @@
 body{
-  background: black;
+  background: #111111;
   color: white;
 }
 
 /* nav bar  */
+
+.the-void {
+  font-size: 400%;
+}
 
 a {
   color: white;
@@ -27,6 +31,8 @@ a {
   overflow-x: hidden;
   vertical-align: bottom;
   margin: 0 0 0 0.5rem;
+  padding-bottom: 18px;
+  font-size: 30px;
 }
 .submenu {
   display: inline-block;
@@ -47,8 +53,8 @@ a {
 button {
   z-index: 1;
   position: fixed;
-  bottom: 3em;
-  left: 1em;
+  /* bottom: 3em;
+  left: 1em; */
 }
 
 /* contact-form */
