@@ -46,7 +46,9 @@ body {
 }
 
 
-/* input form */
+
+
+
 /* Style inputs with type="text", select elements and textareas */
 input[type=text], select, textarea {
     width: 100%; /* Full width */
@@ -74,11 +76,10 @@ input[type=submit]:hover {
     background-color: #45a049;
 }
 
-
-
 /* Add a background color and some padding around the form */
 .contact-form {
-    color: #E8E8E8;
+    border-radius: 5px;
+    background-color: #f2f2f2;
     padding: 20px;
 }
 
@@ -87,13 +88,13 @@ input[type=submit]:hover {
   position: absolute;
   left: 0;
   top: 0;
-  width: 60%;
-  display: none;
+  height: 100%;
 }
 
 /* github link */
 .github {
   position: absolute;
   padding-right: 20%;
+  bottom: 180px;
   right: 0;
 }
