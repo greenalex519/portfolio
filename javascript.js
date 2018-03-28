@@ -25,24 +25,25 @@
 
 	// Get the modal
 	var modal = document.getElementById('myModal');
-	var modalImg = document.getElementById("img01");
+	if (modal) {
+		var modalImg = document.getElementById("img01");
 
-	// Get the image and insert it inside the modal - use its "alt" text as a caption
-	const imgs = document.getElementsByTagName('img');
-	for (let i = 0; i < imgs.length; i++) {
-		imgs[i].addEventListener('click', function(){
-		    modal.style.display = "block";
-		    modalImg.src = this.src;
-		});
+		// Get the image and insert it inside the modal - use its "alt" text as a caption
+		const imgs = document.getElementsByTagName('img');
+		for (let i = 0; i < imgs.length; i++) {
+			imgs[i].addEventListener('click', function(){
+			    modal.style.display = "block";
+			    modalImg.src = this.src;
+			});
+		}
+
+		// Get the <span> element that closes the modal
+		var span = document.getElementsByClassName("close")[0];
+		// When the user clicks on <span> (x), close the modal
+		span.onclick = function() {
+		  modal.style.display = "none";
+		}
 	}
-
-	// Get the <span> element that closes the modal
-	var span = document.getElementsByClassName("close")[0];
-	// When the user clicks on <span> (x), close the modal
-	span.onclick = function() {
-	  modal.style.display = "none";
-	}
-
 
 
 	/**

@@ -1,10 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+label {
+  color: #E8E8E8;
+  font-family: 'Lato', sans-serif;
+}
+
 body {
   background: #111111;
   color: #E8E8E8;
-  font-family: font-family: 'Mina', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+
+h2 {
+  color: #E8E8E8;
+  font-family: 'Lato', sans-serif;
 }
 
 /* navbar */
+a {
+  text-decoration: none;
+  color: #E8E8E8;
+}
+
 .void {
   position: fixed;
   bottom: 1rem;
@@ -20,7 +37,9 @@ body {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column-reverse;
-  font-family: 'Press Start 2P', cursive;
+  font-family: 'Raleway', sans-serif;
+  font-size: 400%;
+  text-decoration: none;
 }
 .menu-wrap {
   display: inline-block;
@@ -35,6 +54,7 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  font-size: 2em;
 }
 .menu:focus-within {
   transform: translateX(0);
@@ -72,6 +92,7 @@ input[type=submit] {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    margin-right: 45%;
 }
 
 input[type=submit]:hover {
@@ -122,6 +143,8 @@ input[type=submit]:hover {
   right 0;
   width: 30%;
   display: inline-block;
+  color: #E8E8E8;
+  font-family: 'Lato', sans-serif;
 }
 
 /* Style the images inside the grid */
