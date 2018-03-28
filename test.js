@@ -18,15 +18,29 @@
 	let yMod = 0;
 
 	// const btn = document.getElementById('btn');
-	const btns = document.getElementsByClassName('column');
 	let isBugged = false;
+	//
+	// let i;
 
-	let i;
-	for (i = 0; i < btns.length; i++) {
-		btns[i].addEventListener('click', function() {
-			isBugged = !isBugged;
-			console.log('lalal');
+
+	// Get the modal
+	var modal = document.getElementById('myModal');
+	var modalImg = document.getElementById("img01");
+
+	// Get the image and insert it inside the modal - use its "alt" text as a caption
+	const imgs = document.getElementsByTagName('img');
+	for (let i = 0; i < imgs.length; i++) {
+		imgs[i].addEventListener('click', function(){
+		    modal.style.display = "block";
+		    modalImg.src = this.src;
 		});
+	}
+
+	// Get the <span> element that closes the modal
+	var span = document.getElementsByClassName("close")[0];
+	// When the user clicks on <span> (x), close the modal
+	span.onclick = function() {
+	  modal.style.display = "none";
 	}
 
 
@@ -140,7 +154,7 @@
 	function updateModifier(e) {
 		const clientX = e.touches ? e.touches[0].clientX : e.clientX;
 		const clientY = e.touches ? e.touches[0].clientY : e.clientY;
-		console.log(clientX, clientY);
+		// console.log(clientX, clientY);
 		const x = clientX === 0 ? 1 : clientX;
 		const y = clientY === 0 ? 1 : clientY;
 		modifier = Math.ceil(y * 10 / h);
@@ -1352,15 +1366,15 @@ function getRand(min, max) {
 
 
 // explore grid
-function myFunction(imgs) {
-  // Get the expanded image
-  var expandImg = document.getElementById("expandedImg");
-  // Get the image text
-  var imgText = document.getElementById("imgtext");
-  // Use the same src in the expanded image as the image being clicked on from the grid
-  expandImg.src = imgs.src;
-  // Use the value of the alt attribute of the clickable image as text inside the expanded image
-  imgText.innerHTML = imgs.alt;
-  // Show the container element (hidden with CSS)
-  expandImg.parentElement.style.display = "block";
-}
+// function expandImage(imgs) {
+//   // Get the expanded image
+//   var expandImg = document.getElementById("expandedImg");
+//   // Get the image text
+//   var imgText = document.getElementById("imgtext");
+//   // Use the same src in the expanded image as the image being clicked on from the grid
+//   expandImg.src = imgs.src;
+//   // Use the value of the alt attribute of the clickable image as text inside the expanded image
+//   imgText.innerHTML = imgs.alt;
+//   // Show the container element (hidden with CSS)
+//   expandImg.parentElement.style.display = "block";
+// }
