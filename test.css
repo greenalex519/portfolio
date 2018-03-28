@@ -108,14 +108,20 @@ input[type=submit]:hover {
 /* grid */
 .grid {
   left: 0;
-  width: 60%;
+  width: 100%;
 }
 
 /* The grid: three equal columns that floats next to each other */
 .column {
     float: left;
-    width: 45%;
+    width: 30%;
     padding: 10px;
+}
+
+.column-last {
+  right 0;
+  width: 30%;
+  display: inline-block;
 }
 
 /* Style the images inside the grid */
@@ -159,4 +165,12 @@ input[type=submit]:hover {
     color: white;
     font-size: 35px;
     cursor: pointer;
+}
+
+/* explore textboxes */
+.textboxes {
+  right: 0;
+  display: block;
+  background-color: yellow;
+  padding-left: 70%;
 }
